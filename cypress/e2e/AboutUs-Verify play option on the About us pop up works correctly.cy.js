@@ -13,7 +13,7 @@ describe('Test play option on the About us pop up works correctly', () => {
     cy.get('[class="vjs-play-control vjs-control vjs-button vjs-playing"]').click()
     
     //Click on the x option 
-    cy.contains('button', 'Close').click({force: true}); //this line is not eorking
+    cy.contains('button', 'Close').click({force: true}); //this line is not working
     
   })
 })
