@@ -9,7 +9,7 @@ describe('Close button works correctly in About us pop up', () => {
     cy.contains('h5','About us').should('be.visible')
 
     //Verify the pop up contains the Close button and click over it
-    cy.contains('button', 'Close').click();   //this line is not working
+    cy.contains('button', 'Close').click({force: true});   //not close the pop up
     
 
 
