@@ -22,7 +22,7 @@ describe('Test purchase button is working correctly on Place order pop up', () =
   
     //Verify Purchase button is displayed and click on it
     cy.get('[onclick="purchaseOrder()"]').click()
-
+    cy.wait(5000)
     //Verify Ok button is displayed after clicking Purchase Order button
     cy.contains('OK').should('be.visible')
 

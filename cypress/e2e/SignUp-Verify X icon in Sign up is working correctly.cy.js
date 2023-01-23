@@ -10,7 +10,7 @@ describe('Test X icon in Sign up is working correctly', () => {
     cy.contains('h5','Sign up')
 
     //Verify x option is displayed on the pop up and click over it
-    cy.contains('×').should ('be.enabled').click({force: true})   //it is not working
+    cy.contains('×').should ('be.enabled').click({force: true})   //not close the pop up
 
   })
 })

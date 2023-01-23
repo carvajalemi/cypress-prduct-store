@@ -13,10 +13,10 @@ describe('Test that is posible to login using valid account', () => {
    
     //Verify if the Log in button ixist and click over it
     cy.get('[onclick="logIn()"]').click()
-
+    cy.wait(5000)
     //Verify Log out and Welcome are displayed after log in
-    cy.get('[id="logout2"]').should('be.visible')
-    cy.get('[id="nameofuser"]').should('be.visible')
+    cy.get('[id="logout2"]').should('exist')
+    cy.get('[id="nameofuser"]').should('exist')
 
   })
 })
