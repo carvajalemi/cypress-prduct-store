@@ -11,9 +11,11 @@ describe('Test Ok button works correctly after success purchase is done', () => 
   //Verify Place Order is displayed in the pop up as title
   cy.get('h5').contains('Place order').should ('be.visible')
 
+  cy.wait(1500)
+
   //Get the Name text field and fill in the Name value
   cy.get('#name').type('ec')
-
+  
   //Get the Credit card text field and fill in the number value
   cy.get('#card').type('123')
   
