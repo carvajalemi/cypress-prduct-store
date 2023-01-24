@@ -13,9 +13,9 @@ describe('Test purchase button is working correctly on Place order pop up', () =
 
     //Verify Place Order title is displayed in the pop up
     cy.get('[id="orderModalLabel"]').should ('be.visible')
-
+    cy.wait(5000)
     //Fill the Name value in Name field
-    cy.get('[id="name"]').type('test Name')
+    cy.get('[id="name"]').type('test name')
 
     //Fill the number value in Credit card field
     cy.get('[id="card"]').type('123')
