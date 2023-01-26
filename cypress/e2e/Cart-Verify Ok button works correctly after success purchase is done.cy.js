@@ -12,7 +12,6 @@ describe('Test Ok button works correctly after success purchase is done', () => 
   cy.get('h5').contains('Place order').should ('be.visible')
 
   cy.wait(1500)
-
   //Get the Name text field and fill in the Name value
   cy.get('#name').type('ec')
   
