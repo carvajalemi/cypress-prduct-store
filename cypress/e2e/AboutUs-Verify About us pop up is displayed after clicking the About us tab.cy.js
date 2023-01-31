@@ -7,6 +7,8 @@ describe('Test about us pop up is displayed after clicking about us tab', () => 
 
     //Verify About us pop up is displayed
   cy.contains('h5','About us').should('be.visible')
+
+  /// this is  change
   
   })
 })
